@@ -1,0 +1,65 @@
+.box{
+    height: auto;
+    width: 120%;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px rgb(98, 94, 94);
+    margin-bottom: 5px;
+}
+
+.box .rowbox{
+    width: 80%;
+}
+
+.rowbox .img-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+} */
+
+.col-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(245, 16, 16);
+    position: relative;
+    top: 10px;
+    left:50px;
+    background: rgb(30, 28, 28);
+}
+   
+.swiper-button-prev
+ {
+
+  color: #2731f9 !important;
+  position: absolute;
+  left:-2px !important ;
+  top: 100px !important;
+  height: 100px !important;
+   
+  background-color: rgb(35, 198, 152);
+  
+}
+
+.swiper-button-next
+ {
+
+  color: #2e25e5 !important;
+  position: absolute;
+  right:-2px !important ;
+  top: 100px !important;
+  height: 100px !important;
+   
+  background-color: rgb(35, 198, 152);
+  
+}
