@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { cartUiActions } from "../../store/cartUiSlice";
 import { Link } from 'react-router-dom';
 
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";            //import module from firebase 
 import { auth } from '../../firebase.config';
 
 
@@ -15,7 +15,7 @@ const Navbars = () => {
     const provider = new GoogleAuthProvider();
     const [pic, setpic] = useState(Logo);
 
-    const signinwithgoogle = () => {
+    const signinwithgoogle = () => {                        //sign in function from Google
         signInWithPopup(auth, provider)
             .then((result) => {
                 const name = result.user.displayName
@@ -28,10 +28,10 @@ const Navbars = () => {
             })
     }
 
-    const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+    const totalQuantity = useSelector((state) => state.cart.totalQuantity);             //import total Quantity from store redux
     const dispatch = useDispatch();
 
-    const toggleCart = () => {
+    const toggleCart = () => {                                                          //import toggle from store redux
         dispatch(cartUiActions.toggle());
     };
 
