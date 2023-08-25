@@ -9,9 +9,9 @@ import Sliderfor from './Sliderfor';
 
 const MainSlider = () => {
   return (
-    <div className='banner'>
+    <div className='banner d-flex flex-wrap' >
       <Swiper
-        navigation={true}
+        // navigation={true}
         modules={[Autoplay, Navigation]}
         grabCursor={true}
         spaceBetween={5}

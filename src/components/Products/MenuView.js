@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import ProdCard from './ProdCard';
 import {categories,options} from "../../Data/Prodinfo";
-
+import {Button , Typography} from "@mui/material"
 const MenuView = () => {
     const [category, setCategory] = useState();
     const [allcategories, setAllcategories] = useState(categories);
@@ -76,16 +76,27 @@ const MenuView = () => {
                         </Col>
 
                         <Col lg="12">
-                            <div className="food__category d-flex align-items-center justify-content-center gap-4">
+                            <div className="food__category d-flex align-items-center justify-content-center gap-2 flex-wrap">
                                 {options.map((cat) => (
-                                    <button
+                                    <Button
+                                    variant='contained'
+                                     size='small'
+                                     sx={{
+                                        "&:hover":{
+                                            backgroundColor:'skyblue',
+                                            color:'black',
+                                            fontWeight:'bold'
+                                        }
+                                     }}
+                                     
+                                        
                                         key={cat.id}
-                                        className={`d-flex align-items-center gap-2 ${category === cat.id ? "foodBtnActive" : ""
+                                        className={`d-flex align-items-center btn-menu  ${category === cat.id ? "foodBtnActive" : ""
                                             } `}
                                         onClick={() => setCategory(cat.category)}
                                     >
-                                        <p> {cat.name} </p>
-                                    </button>
+                                        <Typography> {cat.name} </Typography>
+                                    </Button>
                                 ))}
                             </div>
                         </Col>
