@@ -116,7 +116,7 @@ const AppBarWithLinks = () => {
               Contact
             </Button>
             <Button color="inherit" component={Link} to="/cart" disableElevation onClick={toggleCart} style={{ position: "relative" }}>
-              <Badge badgeContent={totalQuantity > 0 && (
+              <Badge badgeContent={totalQuantity >= 0 && (
                 <span >{totalQuantity}</span>
               )} color="success">
                 <ShoppingCartIcon fontSize="medium" />
@@ -172,7 +172,7 @@ const AppBarWithLinks = () => {
             </ListItem>
             <ListItem button component={Link} to="/cart">
               <Button color="inherit" component={Link} to="/cart" disableElevation onClick={toggleCart} style={{ position: "relative" }}>
-                <Badge badgeContent={totalQuantity > 0 && (
+                <Badge badgeContent={totalQuantity >= 0 && (
                   <span >{totalQuantity}</span>
                 )} color="success">
                   <ShoppingCartIcon fontSize="medium" />
