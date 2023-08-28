@@ -24,6 +24,7 @@ const MainSlider = () => {
           <SwiperSlide key={i}>
             <Sliderfor 
               title={val.title}
+              desc={val.desc}
               image={val.image}>
             </Sliderfor>
           </SwiperSlide>

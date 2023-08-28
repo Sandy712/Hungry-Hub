@@ -14,9 +14,18 @@ function App() {
   return (
     <>
     <Navbars/>
+    <div style={{marginTop:'4rem'}}>
     <MainSlider/>
+     
+      <hr />
+     
+    </div>
+
     <MenuView/>
+    <div style={{marginTop:'4rem'}}>
     {showCart&& <Carts/>}
+
+    </div>
     </>
   );
 }

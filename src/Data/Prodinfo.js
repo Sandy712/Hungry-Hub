@@ -1,9 +1,9 @@
-import seafood from "../Images/seafood.webp"
-import cakefood from "../Images/royal-cake-banner.png"
-import biryani from "../Images/BiryANY-Combo-Banner.jpg"
-import burger from "../Images/burger-banner.jpg"
-import rools from "../Images/Tapa-rool-banner.jpg"
-import pizza from "../Images/pizza-banner.jpg"
+import seafood from "../Images/fish6.png"
+import cakefood from "../Images/cake3.png"
+import biryani from "../Images/biryani5.png"
+import burger from "../Images/burger1.png"
+import rools from "../Images/rolls4.png"
+import pizza from "../Images/pizza2.png"
 
 
 //categories image
@@ -104,26 +104,34 @@ export const options =[
 export const banner = [
     {
         title: 'Best Sea Food for you',
-        image: seafood,  
+        desc:'Sink into luxury with our plush Godrej Interio sofas. Handcrafted for comfort and style,',
+         image: seafood,  
+         
     },
     {
         title: 'Best Cake for you',
-        image: cakefood,
+        desc:'Sink into luxury with our plush Godrej Interio sofas. Handcrafted for comfort and style,',
+         image: cakefood,
     },
     {
         title: 'Best Biryani for you',
-        image: biryani,
+        desc:'Sink into luxury with our plush Godrej Interio sofas. Handcrafted for comfort and style,',
+         image: biryani,
     },
     {
         title: 'Best Burger for you',
-        image: burger,
+        desc:'Sink into luxury with our plush Godrej Interio sofas. Handcrafted for comfort and style,',
+         image: burger,
     },
     {
         title: 'Best Rolls for you',
-        image: rools,
+        desc:'Sink into luxury with our plush Godrej Interio sofas. Handcrafted for comfort and style,',
+         image: rools,
     },
     {
         title: 'Best Pizza for you',
+        desc:'Sink into luxury with our plush Godrej Interio sofas. Handcrafted for comfort and style,',
+         
         image: pizza,
     },
 ];
@@ -134,84 +142,96 @@ export const categories=[
         "title": "Butter Chicken",
         "image": cu4,
         "price": 102,
-        "category": "chicken"
+        "category": "chicken",
+        "value":4
     },
     {
         "id": 8,
         "title": "Chicken and Fries",
         "image": c7,
         "price": 130,
-        "category": "chicken"
+        "category": "chicken",
+        "value":5
     },
     {
         "id": 9,
         "title": "Chicken Tikka",
         "image": c6,
         "price": 112,
-        "category": "chicken"
+        "category": "chicken",
+        "value":4.5
     },
     {
         "id": 10,
         "title": "Fried Chicken",
         "image": c4,
         "price": 140,
-        "category": "chicken"
+        "category": "chicken",
+        "value":4
     },
     {
         "id": 11,
         "title": "Chilli Chicken",
         "image": c1,
         "price": 152,
-        "category": "chicken"
+        "category": "chicken",
+        "value":5
     },
     {
         "id": 12,
         "title": "Chicken Kebab",
         "image": c3,
         "price": 120,
-        "category": "chicken"
+        "category": "chicken",
+        "value":4.5
     },
     {
         "id": 13,
         "title": "Besan Kofta",
         "image": cu5,
         "price": 120,
-        "category": "Curry"
+        "category": "Curry",
+        "value":4
     },
     {
         "id": 14,
         "title": "Curry Masala",
         "image": cu3,
         "price": 130,
-        "category": "Curry"
+        "category": "Curry",
+        "value":5
     },
     {
         "id": 15,
         "title": "Mixed Vegetables",
         "image": cu2,
         "price": 150,
-        "category": "Curry"
+        "category": "Curry",
+        "value":4.5
     },
     {
         "id": 16,
         "title": "Paneer Butter Maslaa",
         "image": cu1,
         "price": 120,
-        "category": "Curry"
+        "category": "Curry",
+        "value":5
     },
     {
         "id": 17,
         "title": "Paneer Rice Maslaa",
         "image": cu6,
         "price": 150,
-        "category": "Curry"
+        "category": "Curry",
+        "value":3.5
     },
     {
         "id": 18,
         "title": "Pulao",
         "image": r5,
         "price": 130,
-        "category": "Rice"
+        "category": "Rice",
+        "value":4.5
     },
     
     {
@@ -219,7 +239,8 @@ export const categories=[
         "title": "Mutton Pulao",
         "image": r4,
         "price": 130,
-        "category": "Rice"
+        "category": "Rice",
+        "value":4
     },
     
     {
@@ -227,7 +248,8 @@ export const categories=[
         "title": "Tandoori Biryani",
         "image": r3,
         "price": 150,
-        "category": "Rice"
+        "category": "Rice",
+        "value":4
     },
     
     {
@@ -235,7 +257,8 @@ export const categories=[
         "title": "Chicken Biryani",
         "image": r2,
         "price": 140,
-        "category": "Rice"
+        "category": "Rice",
+        "value":5
     },
     
     {
@@ -243,49 +266,56 @@ export const categories=[
         "title": "Veg Biryani",
         "image": r1,
         "price": 130,
-        "category": "Rice"
+        "category": "Rice",
+        "value":4
     },
     {
         "id": 23,
         "title": "Whole trout",
         "image": fi4,
         "price": 150,
-        "category": "seafood"
+        "category": "seafood",
+        "value":4.5
     },
     {
         "id": 24,
         "title": "Pescado Fish",
         "image": fi3,
         "price": 160,
-        "category": "seafood"
+        "category": "seafood",
+        "value":4
     },
     {
         "id": 25,
         "title": "Whole Grilled Fish",
         "image": fi2,
         "price": 150,
-        "category": "seafood"
+        "category": "seafood",
+        "value":4.5
     },
     {
         "id": 26,
         "title": "Fish Kebab",
         "image": fi1,
         "price": 200,
-        "category": "seafood"
+        "category": "seafood",
+        "value":5
     },
     {
         "id": 27,
         "title": "Fish Fry",
         "image": fi5,
         "price": 250,
-        "category": "seafood"
+        "category": "seafood",
+        "value":5
     },
     {
         "id": 28,
         "title": "Water Melon",
         "image": f10,
         "price": 50,
-        "category": "fruits"
+        "category": "fruits",
+        "value":4.5
     },
     
     {
@@ -293,7 +323,8 @@ export const categories=[
         "title": "Banana",
         "image": f9,
         "price": 50,
-        "category": "fruits"
+        "category": "fruits",
+        "value":4
     },
     
     {
@@ -301,7 +332,8 @@ export const categories=[
         "title": "Cherry",
         "image": f8,
         "price": 450,
-        "category": "fruits"
+        "category": "fruits",
+        "value":5
     },
     
     {
@@ -309,7 +341,8 @@ export const categories=[
         "title": "Redberries",
         "image": f7,
         "price": 150,
-        "category": "fruits"
+        "category": "fruits",
+        "value":4
     },
     
     {
@@ -317,98 +350,112 @@ export const categories=[
         "title": "Black Grapes",
         "image": f4,
         "price": 150,
-        "category": "fruits"
+        "category": "fruits",
+        "value":5
     },
     {
         "id": 33,
         "title": "BlackBerries",
         "image": f3,
         "price": 165,
-        "category": "fruits"
+        "category": "fruits",
+        "value":4
     },
     {
         "id": 34,
         "title": "Pineapple",
         "image": f2,
         "price": 120,
-        "category": "fruits"
+        "category": "fruits",
+        "value":4
     },
     {
         "id": 35,
         "title": "Pomegrante",
         "image": f6,
         "price": 200,
-        "category": "fruits"
+        "category": "fruits",
+        "value":5
     },
     {
         "id": 36,
         "title": "Strawberry",
         "image": f1,
         "price": 160,
-        "category": "fruits"
+        "category": "fruits",
+        "value":4
     },
     {
         "id": 37,
         "title": "Strawberry Vanilla",
         "image": i7,
         "price": 80,
-        "category": "dessert"
+        "category": "dessert",
+        "value":5
     },
     {
         "id": 38,
         "title": "Fruit Sundae",
         "image": i6,
         "price": 85,
-        "category": "dessert"
+        "category": "dessert",
+        "value":5
     },
     {
         "id": 39,
         "title": "Strawberry Basket",
         "image": i5,
         "price": 92,
-        "category": "dessert"
+        "category": "dessert",
+        "value":4.5
     },
     {
         "id": 40,
         "title": "Vanilla",
         "image": i2,
         "price": 52,
-        "category": "dessert"
+        "category": "dessert",
+        "value":4
     },
     {
         "id": 41,
         "title": "Chocolate Vanilla",
         "image": i1,
         "price": 110,
-        "category": "dessert"
+        "category": "dessert",
+        "value":4.5
     },
     {
         "id": 42,
         "title": "Cone Vanilla",
         "image": i3,
         "price": 75,
-        "category": "dessert"
+        "category": "dessert",
+        "value":4.5
     },
     {
         "id": 43,
         "title": "Coca Cola",
         "image": d8,
         "price": 50,
-        "category": "drink"
+        "category": "drink",
+        "value":5
     },
     {
         "id": 44,
         "title": "Fanta",
         "image": d6,
         "price": 150,
-        "category": "drink"
+        "category": "drink",
+        "value":3.5
     },
     {
         "id": 45,
         "title": "Sprite",
         "image": d5,
         "price": 80,
-        "category": "drink"
+        "category": "drink",
+        "value":4.5
     },
     
     {
@@ -416,27 +463,31 @@ export const categories=[
         "title": "Blueberry Drink",
         "image": d4,
         "price": 95,
-        "category": "drink"
+        "category": "drink",
+        "value":4
     },
     {
         "id": 47,
         "title": "Mopnster Energy",
         "image": d3,
         "price": 150,
-        "category": "drink"
+        "category": "drink",
+        "value":5
     },
     {
         "id": 48,
         "title": "Pepsi",
         "image": d2,
         "price": 80,
-        "category": "drink"
+        "category": "drink",
+        "value":4.5
     },
     {
         "id": 49,
         "title": "Red Bull",
         "image": d1,
         "price": 150,
-        "category": "drink"
+        "category": "drink",
+        "value":4
     },
 ]

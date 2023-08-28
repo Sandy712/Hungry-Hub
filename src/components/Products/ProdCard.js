@@ -1,59 +1,65 @@
-import React from 'react'
-import { FaStar } from "react-icons/fa"
-import { AiFillPlusCircle } from "react-icons/ai";
-import { Col } from 'react-bootstrap';
+import React from "react";
 
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+
+import Typography from "@mui/material/Typography";
+import { Button, CardActionArea, CardActions } from "@mui/material";
 
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cartSlice";
+import { Stack, Rating } from "@mui/material";
 
 const ProdCard = (props) => {
-    const { id, title, image, price } = props.item;
+  const { id, title, image, price,value } = props.item;
 
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch();
+  const addToCart = () => {
+    dispatch(
+      cartActions.addItem({
+        id,
+        title,
+        image,
+        price,
+        value,
+      })
+    );
+  };
 
-    const addToCart = () => {
-        dispatch(
-            cartActions.addItem({
-                id,
-                title,
-                image,
-                price,
-            })
-        );
-    };
+  return (
+    <>
+      <Card sx={{ maxWidth: 300 }} className="main-card">
+        <CardActionArea>
+          <img src={image} alt="" className="prod-img" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {title}
+            </Typography>
+            <Typography>Rs.{price}</Typography>
+            <Stack spacing={2}>
+              <Rating
+                value={value}
+                precision={0.5}
+                readOnly
+                // highlightSelectedOnly   this is used for highlighted only one
+              />
+            </Stack>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button
+            size="small"
+            color="primary"
+            variant="contained"
+            onClick={() => addToCart()}
+          >
+            Add to cart
+          </Button>
+        </CardActions>
+      </Card>
+    </>
+  );
+};
 
-    return (
-        <>
-            <Col md={3} sm={4} xs={8} className="product mtop">
-                <div className='prod-card '> 
-                <h5>
-                    <p >{title}</p>
-                </h5>
-                <div className='d-flex' style={{alignItems:'center', justifyContent:'center'}}>
-                <img loading="lazy" src={image} alt="" className='prod-img' />
-                </div>
-
-                <div className="product-details">
-                    <div className="rate">
-                        <FaStar style={{ color: "#fbdf50", }} />
-                        <FaStar style={{ color: "#fbdf50", }} />
-                        <FaStar style={{ color: "#fbdf50", }} />
-                        <FaStar style={{ color: "#fbdf50", }} />
-                        <FaStar style={{ color: "#fbdf50", }} />
-                    </div>
-                    <div className="price p-cart d-flex" style={{marginTop:5}}>
-                        <h4>Rs.{price}</h4>
-                        <button aria-label="Add" type="submit" className="add btn btn-success" onClick={() => addToCart()}>
-                             Add to cart
-                        </button>
-                    </div>
-                </div>
-                </div>
-            </Col>
-        </>
-    )
-}
-
-export default ProdCard
+export default ProdCard;
