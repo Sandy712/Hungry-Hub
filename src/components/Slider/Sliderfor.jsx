@@ -21,7 +21,7 @@ const Sliderfor = ({ title,desc,image}) => {
             
           </Col>
           <Col md={5}>
-            <img className='img' src={image} alt="#" />
+            <img className='img' src={image} alt="#"  />
           </Col>
         </Row>
         

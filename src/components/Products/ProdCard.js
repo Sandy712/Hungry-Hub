@@ -1,5 +1,10 @@
 import React from "react";
 
+ 
+import Snackbar from '@mui/material/Snackbar';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
@@ -14,6 +19,7 @@ const ProdCard = (props) => {
   const { id, title, image, price,value } = props.item;
 
   const dispatch = useDispatch();
+  const [open, setOpen] = React.useState(false);
 
   const addToCart = () => {
     dispatch(
@@ -23,9 +29,35 @@ const ProdCard = (props) => {
         image,
         price,
         value,
-      })
+      }),
+       
     );
+    setOpen(true);
   };
+
+
+  
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  }
+  const action = (
+    <React.Fragment>
+       
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   return (
     <>
@@ -56,6 +88,13 @@ const ProdCard = (props) => {
           >
             Add to cart
           </Button>
+          <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Item Added in Cart"
+        action={action}
+      />
         </CardActions>
       </Card>
     </>

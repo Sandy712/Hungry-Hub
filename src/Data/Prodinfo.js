@@ -423,7 +423,7 @@ export const categories=[
         "image": i1,
         "price": 110,
         "category": "dessert",
-        "value":4.5
+        "value": 4.5
     },
     {
         "id": 42,

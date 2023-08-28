@@ -65,10 +65,20 @@
 }
 .img{
     height: 19rem;
-    width: 22rem;
+    width: 21rem;
     object-fit: contain;
     cursor:default;
+    margin-left: 11rem;
 }
-.desc{
-    color: black;
-}
+ 
+
+@media only screen and (max-width: 420px) {
+    .img{
+        height: 19rem;
+        width: 21rem;
+        object-fit: contain;
+        cursor:default;
+        margin-left: 0rem;
+         
+    }
+  }
