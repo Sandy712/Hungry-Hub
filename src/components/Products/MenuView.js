@@ -68,7 +68,7 @@ const MenuView = () => {
 
     return (
         <>
-            <section>
+            <section id="menuviews">
                 <Container>
                     <Row lg={12}>
                         <Col lg="12" className="text-center">
