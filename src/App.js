@@ -5,6 +5,7 @@ import MainSlider from './components/Slider/MainSlider';
 import Carts from './components/Cart/Carts';
 import { useSelector } from 'react-redux';
 import Navbars from './components/Navbar/Navbars';
+import Footer from './components/Footer/Footer';
  
  
 
@@ -24,8 +25,9 @@ function App() {
     <MenuView/>
     <div style={{marginTop:'4rem'}}>
     {showCart&& <Carts/>}
-
     </div>
+
+    <Footer/>
     </>
   );
 }
