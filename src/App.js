@@ -1,33 +1,30 @@
 import './App.css';
- 
-import MenuView from './components/Products/MenuView';
-import MainSlider from './components/Slider/MainSlider';
+
 import Carts from './components/Cart/Carts';
 import { useSelector } from 'react-redux';
 import Navbars from './components/Navbar/Navbars';
 import Footer from './components/Footer/Footer';
- 
- 
+import Contact from './components/Contact/Contact';
+import { Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+
 
 
 function App() {
   const showCart = useSelector((state) => state.cartUi.cartIsVisible);
   return (
     <>
-    <Navbars/>
-    <div style={{marginTop:'4rem'}}>
-    <MainSlider/>
-     
-      <hr />
-     
-    </div>
+      <Navbars />
 
-    <MenuView/>
-    <div style={{marginTop:'4rem'}}>
-    {showCart&& <Carts/>}
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={showCart && <Carts />} />
+      </Routes>
 
-    <Footer/>
+      <Footer />
+
+      {/* Define the route for the Contact component */}
     </>
   );
 }
