@@ -20,23 +20,23 @@ const Sliderfor = ({ title, desc, image }) => {
       <Row>
         <Col md={6}>
           <div>
-            <h2 className='mx-4'>{title}</h2>
+            <h2 className='mx-4 title-head'>{title}</h2>
           </div>
-
-          <p className='mx-4 desc'>{desc}</p>
-
-          <button className='btn btn-primary mx-4' onClick={handleOrderNowClick}>Order Now</button>
-
+          <p className='mx-4 desc' style={{marginTop:'10px'}}>{desc}</p>
         </Col>
         <Col md={5}>
           <img className='img' src={image} alt="#" />
         </Col>
       </Row>
+          <button className='btn btn-primary mx-4 order-btn' onClick={handleOrderNowClick}>Order Now</button>
 
 
     </Container>
 
   )
 }
+
+
+
 
 export default Sliderfor

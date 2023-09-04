@@ -35,7 +35,7 @@ const CartItem = ({ item }) => {
   };
 
   return (
-    <Paper elevation={4} className="cart__item">
+    <Paper elevation={4} className="cart__item" style={{overflow:'hidden'}}>
       <div className="cart__item-info d-flex gap-2">
         <img src={image} alt="product-img" />
 

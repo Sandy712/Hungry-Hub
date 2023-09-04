@@ -82,14 +82,14 @@ const AppBarWithLinks = () => {
       <Toolbar sx={{ height: 70 }}>
         <Box
           component="img"
-          sx={{ height: 69, width: 62 }}
+          sx={{ height: 68, width: 258 , }}
           alt="Logo"
           src={logo}>
 
         </Box>
 
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, marginLeft: '10px', fontSize: '35px', fontWeight: 'Bold' }}>
-          HungryHub
+          
         </Typography>
         <Hidden mdUp>
           {/* Show the menu button only on screens less than "md" width */}

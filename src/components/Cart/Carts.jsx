@@ -18,7 +18,7 @@ const Carts = () => {
   };
 
   return (
-    <div className="cart__container">
+    <div className="cart__container" style={{overflow:'hidden'}}>
       <Paper className="cart">
         <div className="cart__close">
           <IconButton onClick={toggleCart}>

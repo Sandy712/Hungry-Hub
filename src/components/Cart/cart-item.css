@@ -39,6 +39,17 @@
   margin-bottom: 15px;
   border-bottom: 1px solid #fde4e4;
 }
+cart__item{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow-y: auto;
+}
 
 @media only screen and (max-width: 576px) {
   .delete__btn {

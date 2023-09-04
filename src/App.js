@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import { Routes, Route } from "react-router-dom";
 import Home from './components/Home';
+import About from './components/About/About';
 
 
 
@@ -15,11 +16,12 @@ function App() {
   return (
     <>
       <Navbars />
-
+     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={showCart && <Carts />} />
+        <Route path="/about" element={<About/>} />
       </Routes>
 
       <Footer />

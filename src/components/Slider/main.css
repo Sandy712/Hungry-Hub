@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Libre+Baskerville&family=Sacramento&family=Taviraj&display=swap');
 .box{
     height: auto;
     width: 120%;
@@ -70,15 +72,52 @@
     cursor:default;
     margin-left: 11rem;
 }
+.order-btn{
+    margin-bottom: 2rem;
+    background-color: rgb(139, 72, 24) !important;
+    border: 1px solid white !important;
+    font-weight: bold !important;
+}
+.order-btn:hover{
+    box-shadow: 0 5px 15px gray;
+    background: transparent !important;
+    color: black !important;
+    font-weight: bold;
+}
+ 
+.title-head{
+    
+    font-family: 'Taviraj', serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.desc{
+    text-align: left;
+    font-size: 18px;
+    color: rgb(75, 73, 73);
+     
+}
  
 
 @media only screen and (max-width: 420px) {
     .img{
-        height: 19rem;
-        width: 21rem;
+        height: 16rem;
+        width: 18rem;
         object-fit: contain;
         cursor:default;
-        margin-left: 0rem;
+        margin-left: 10px;
          
     }
+    .desc{
+        text-align: left;
+        font-size: 17px;
+        width: 300px;
+    }
+    .title-head{
+    
+        font-family: 'Taviraj', serif;
+        font-weight: bold;
+        font-size: 26px;
+    }
+     
   }
