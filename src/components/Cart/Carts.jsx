@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, Typography, IconButton, Paper } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import ClearSharpIcon from '@mui/icons-material/ClearSharp';
 import { cartUiActions } from '../../store/cartUiSlice';
@@ -12,9 +12,17 @@ const Carts = () => {
   const dispatch = useDispatch();
   const cartProducts = useSelector((state) => state.cart.cartItems);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
-
+  const navigate = useNavigate();
   const toggleCart = () => {
     dispatch(cartUiActions.toggle());
+    navigate('/');
+
+    
+     
+     
+    
+
+  
   };
 
   return (
@@ -22,7 +30,7 @@ const Carts = () => {
       <Paper className="cart">
         <div className="cart__close">
           <IconButton onClick={toggleCart}>
-            <ClearSharpIcon style={{ fontSize:"40px", color: '#0f172a' }} />
+            <ClearSharpIcon style={{ fontSize:"40px", color: '#0f172a' }}/>
           </IconButton>
         </div>
 

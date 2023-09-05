@@ -59,7 +59,7 @@ const CartItem = ({ item }) => {
           </div>
 
           <IconButton className="delete__btn" onClick={deleteItem}>
-            <CloseIcon style={{ fontSize:"30px", color: 'black' }}/>
+            <CloseIcon style={{ fontSize:"30px", color: 'white' }}/>
           </IconButton>
         </div>
       </div>
