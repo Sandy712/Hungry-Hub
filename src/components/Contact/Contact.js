@@ -58,7 +58,7 @@ const Contact = () => {
             </header>
             <section className="contact-container">
                 <article className="right">
-                    <h1>Follow Us</h1>
+                    <h1 style={{fontSize:'20px',wordWrap:'break-word'}}>Follow Us</h1>
                     <div className="social-links">
                         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
                             <FaFacebook />
@@ -70,13 +70,13 @@ const Contact = () => {
                             <FaInstagram />
                         </a>
                         <a href="/" target="_blank" rel="noreferrer noopener">
-                            <FaPhone />
+                            <FaPhone /> 
                         </a>
                     </div>
                 </article>
                 <article className="right-main">
                     {/* <h1 style={{ marginBottom: "25px" }}>Contact Us</h1> */}
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className="u-form">
                         <article className="form">
                             <label htmlFor="fullName">Full Name</label>
                             <input id="fullName" type="text" name="Full_name" placeholder="Enter Your Full Name" value={userData.Full_name} onChange={handleChange} />

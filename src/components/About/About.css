@@ -63,7 +63,7 @@
     width: 19rem;
 
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:420px){
     .cup{
         height: 276px;
         margin-top: 2.5rem;
