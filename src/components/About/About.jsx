@@ -6,7 +6,6 @@ import cup from "../../Images/cup.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "../About/About.css";
-import { SiGmail } from "react-icons/si";
 
 function App() {
   return (
