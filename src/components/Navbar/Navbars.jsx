@@ -27,7 +27,7 @@ import ava from "../../Images/Logo.png"
 
 
 import { useSelector, useDispatch } from "react-redux";                         //cart funtion
-import { cartUiActions } from "../../store/cartUiSlice";
+import { cartUiActions } from "../../store/cartUiSlice.jsx";
 
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";            //import module from firebase 
 import { auth } from '../../firebase.config';

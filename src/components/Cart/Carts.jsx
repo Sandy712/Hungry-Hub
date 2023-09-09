@@ -3,7 +3,7 @@ import { List, Typography, IconButton, Paper } from '@mui/material';
 import { Link,useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import ClearSharpIcon from '@mui/icons-material/ClearSharp';
-import { cartUiActions } from '../../store/cartUiSlice';
+import { cartUiActions } from '../../store/cartUiSlice.jsx';
 
 import CartItem from './CartItem';
 import './shopping-cart.css';
