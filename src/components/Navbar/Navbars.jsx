@@ -18,7 +18,7 @@ import {
   Stack,
 } from '@mui/material';
 import Badge from '@mui/material/Badge';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import logo from '../../Images/applogo.jpg';
@@ -63,7 +63,10 @@ const AppBarWithLinks = () => {
   const provider = new GoogleAuthProvider();
   const [pic, setpic] = useState(ava);
 
-  const signinwithgoogle = () => {                        //sign in function from Google
+  const navigate = useNavigate();
+  const signinwithgoogle = () => {    //sign in function from Google
+    
+     navigate('/');
     signInWithPopup(auth, provider)
       .then((result) => {
         const name = result.user.displayName
@@ -122,7 +125,7 @@ const AppBarWithLinks = () => {
                 <ShoppingCartIcon fontSize="medium" />
               </Badge>
             </Button>
-            <Button component={Link} to="/login" onClick={signinwithgoogle}>
+            <Button component={Link} to="/" onClick={signinwithgoogle}>
               <Avatar src={pic} />
             </Button>
 

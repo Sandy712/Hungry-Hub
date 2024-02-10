@@ -14,12 +14,14 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cartSlice";
 import { Stack, Rating } from "@mui/material";
+ 
 
 const ProdCard = (props) => {
   const { id, title, image, price,value } = props.item;
 
   const dispatch = useDispatch();
   const [open, setOpen] = React.useState(false);
+   
 
   const addToCart = () => {
     dispatch(
@@ -32,9 +34,14 @@ const ProdCard = (props) => {
       }),
        
     );
-    setOpen(true);
+    setOpen(false);
+     
   };
 
+   
+    
+
+     
 
   
 
@@ -94,6 +101,8 @@ const ProdCard = (props) => {
         onClose={handleClose}
         message="Item Added in Cart"
         action={action}
+        
+        
       />
         </CardActions>
       </Card>
